@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELORA – Fashion That Defines You</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <p>✨ Complimentary worldwide shipping on all orders over $150 | Use code <span class="highlight">VELORA50</span> for End of Season Sale</p>
+    </div>
+
+    <!-- 1. Navigation Bar -->
+    <header id="navbar">
+        <div class="nav-container">
+            <button id="hamburger" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <a href="#hero" class="logo">VELORA</a>
+            <nav class="nav-links">
+                <a href="#hero" class="active">Home</a>
+                <a href="#categories">Women</a>
+                <a href="#categories">Men</a>
+                <a href="#categories">Kids</a>
+                <a href="#categories">Accessories</a>
+                <a href="#collections">Collections</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="searchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <button id="wishlistBtn" aria-label="Wishlist">
+                    <i class="fa-regular fa-heart"></i>
+                    <span id="wishlistCount" class="badge">0</span>
+                </button>
+                <button id="cartBtn" aria-label="Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cartCount" class="badge">0</span>
+                </button>
+                <button id="userBtn" aria-label="Account"><i class="fa-regular fa-user"></i></button>
+            </div>
+        </div>
+        <!-- Search Bar Dropdown -->
+        <div id="searchContainer" class="search-container">
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" placeholder="Search for dresses, jackets, accessories...">
+                <button id="closeSearch"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section id="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=1920" alt="Velora Fashion Model">
+        </div>
+        <div class="hero-content">
+            <span class="hero-tag">NEW AUTUMN / WINTER COLLECTION</span>
+            <h1>Discover Your Style,<br>Define Your Fashion</h1>
+            <p>Explore the latest trends and elevate your everyday look with our curated luxury essentials.</p>
+            <div class="hero-buttons">
+                <a href="#trending" class="btn-primary">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#collections" class="btn-secondary">Explore Collections</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Shopping Categories -->
+    <section id="categories" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Shop by Category</h2>
+                <p>Explore our signature lines tailored for every occasion</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-category="women">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600" alt="Women's Fashion">
+                    <div class="category-overlay">
+                        <h3>Women's Fashion</h3>
+                        <a href="#new-arrivals" class="cat-btn">Shop Women <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card" data-category="men">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80&w=600" alt="Men's Fashion">
+                    <div class="category-overlay">
+                        <h3>Men's Fashion</h3>
+                        <a href="#new-arrivals" class="cat-btn">Shop Men <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card" data-category="kids">
+                    <img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?auto=format&fit=crop&q=80&w=600" alt="Kids Collection">
+                    <div class="category-overlay">
+                        <h3>Kids Collection</h3>
+                        <a href="#new-arrivals" class="cat-btn">Shop Kids <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card" data-category="footwear">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&q=80&w=600" alt="Footwear">
+                    <div class="category-overlay">
+                        <h3>Footwear</h3>
+                        <a href="#new-arrivals" class="cat-btn">Shop Shoes <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card" data-category="accessories">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=600" alt="Accessories">
+                    <div class="category-overlay">
+                        <h3>Accessories</h3>
+                        <a href="#new-arrivals" class="cat-btn">Shop Accessories <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Trending Products -->
+    <section id="trending" class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>Trending Now</h2>
+                <p>The most coveted pieces loved by our global style community</p>
+            </div>
+            <div class="products-grid" id="trendingGrid">
+                <!-- Dynamically populated by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Special Offers -->
+    <section id="special-offers">
+        <div class="offer-banner">
+            <div class="offer-content">
+                <span class="badge-limited">LIMITED TIME OFFER</span>
+                <h2>FLAT 50% OFF</h2>
+                <h3>End of Season Sale</h3>
+                <p>Upgrade your wardrobe with premium luxury styles at unprecedented prices. Use code <strong id="promoCodeText">VELORA50</strong> at checkout.</p>
+                <div class="offer-actions">
+                    <a href="#new-arrivals" class="btn-gold">Shop Offers</a>
+                    <button id="copyCodeBtn" class="btn-outline-gold"><i class="fa-regular fa-copy"></i> Copy Promo Code</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Featured Collections -->
+    <section id="collections" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Collections</h2>
+                <p>Editorial showcases designed for distinctive tastes</p>
+            </div>
+            <div class="collections-grid">
+                <div class="collection-card large">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&q=80&w=1000" alt="Summer Collection">
+                    <div class="collection-info">
+                        <span>LUXURY EDIT</span>
+                        <h3>Summer Collection</h3>
+                        <a href="#new-arrivals" class="link-arrow">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&q=80&w=800" alt="Winter Essentials">
+                    <div class="collection-info">
+                        <span>COZY CLASSICS</span>
+                        <h3>Winter Essentials</h3>
+                        <a href="#new-arrivals" class="link-arrow">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=800" alt="Streetwear Collection">
+                    <div class="collection-info">
+                        <span>URBAN EDGE</span>
+                        <h3>Streetwear Collection</h3>
+                        <a href="#new-arrivals" class="link-arrow">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=800" alt="Party Wear">
+                    <div class="collection-info">
+                        <span>AFTER HOURS</span>
+                        <h3>Party Wear</h3>
+                        <a href="#new-arrivals" class="link-arrow">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&q=80&w=800" alt="Premium Collection">
+                    <div class="collection-info">
+                        <span>HIGH COUTURE</span>
+                        <h3>Premium Collection</h3>
+                        <a href="#new-arrivals" class="link-arrow">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. New Arrivals -->
+    <section id="new-arrivals" class="section bg-light">
+        <div class="container">
+            <div class="section-title">
+                <h2>New Arrivals & All Products</h2>
+                <p>Filter through our latest drops and timeless wardrobe staples</p>
+            </div>
+            <!-- Category Filters -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="women">Women</button>
+                <button class="filter-btn" data-filter="men">Men</button>
+                <button class="filter-btn" data-filter="kids">Kids</button>
+                <button class="filter-btn" data-filter="footwear">Footwear</button>
+                <button class="filter-btn" data-filter="accessories">Accessories</button>
+            </div>
+            <div class="products-grid" id="catalogGrid">
+                <!-- Dynamically populated by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Why Shop With Us -->
+    <section class="features-section">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h4>Free Shipping</h4>
+                    <p>On all orders over $150 worldwide</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h4>Secure Payments</h4>
+                    <p>100% encrypted & protected transactions</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <h4>Easy Returns</h4>
+                    <p>30-day hassle-free return policy</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-gem"></i>
+                    <h4>Premium Quality</h4>
+                    <p>Crafted with elite sustainable fabrics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container newsletter-box">
+            <h2>Stay Ahead of Fashion</h2>
+            <p>Subscribe to receive exclusive drops, VIP private sales, and styling tips straight to your inbox.</p>
+            <form id="newsletterForm" class="newsletter-form">
+                <input type="email" id="newsletterEmail" placeholder="Enter your email address..." required>
+                <button type="submit" class="btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 10. Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <a href="#hero" class="footer-logo">VELORA</a>
+                <p>Fashion That Defines You. Uncompromising elegance, modern craftsmanship, and sustainable luxury.</p>
+                <div class="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#trending">Trending Now</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#new-arrivals">New Arrivals</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="#about" data-modal="aboutModal">About Us</a></li>
+                    <li><a href="#contact" data-modal="contactModal">Contact Us</a></li>
+                    <li><a href="#privacy" data-modal="privacyModal">Privacy Policy</a></li>
+                    <li><a href="#terms" data-modal="termsModal">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Store Location</h4>
+                <p><i class="fa-solid fa-location-dot"></i> 742 Evergreen Terrace, Fifth Avenue, New York, NY 10022</p>
+                <p><i class="fa-solid fa-phone"></i> +1 (800) 555-VELORA</p>
+                <p><i class="fa-solid fa-envelope"></i> concierge@velora.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 VELORA Inc. All rights reserved. Designed for elite fashion connoisseurs.</p>
+        </div>
+    </footer>
+
+    <!-- Slide-over Cart Drawer -->
+    <div id="cartDrawer" class="drawer">
+        <div class="drawer-header">
+            <h3>Your Shopping Bag (<span id="drawerCartCount">0</span>)</h3>
+            <button id="closeCart" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="drawer-body" id="cartItemsList">
+            <!-- Cart items populated by JS -->
+        </div>
+        <div class="drawer-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal:</span>
+                <span id="cartSubtotal">$0.00</span>
+            </div>
+            <div class="promo-apply">
+                <input type="text" id="cartPromoInput" placeholder="Promo code (e.g., VELORA50)">
+                <button id="applyPromoBtn" class="btn-sm">Apply</button>
+            </div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button id="checkoutBtn" class="btn-primary full-width">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Slide-over Wishlist Drawer -->
+    <div id="wishlistDrawer" class="drawer">
+        <div class="drawer-header">
+            <h3>Your Wishlist (<span id="drawerWishlistCount">0</span>)</h3>
+            <button id="closeWishlist" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="drawer-body" id="wishlistItemsList">
+            <!-- Wishlist items populated by JS -->
+        </div>
+    </div>
+
+    <!-- Product Quick View Modal -->
+    <div id="quickViewModal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeQuickView"><i class="fa-solid fa-xmark"></i></button>
+            <div class="quick-view-grid" id="quickViewBody">
+                <!-- Populated by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- User Authentication Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content auth-content">
+            <button class="close-modal" id="closeAuth"><i class="fa-solid fa-xmark"></i></button>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Sign In</button>
+                <button class="auth-tab" data-tab="register">Create Account</button>
+            </div>
+            <form id="loginForm" class="auth-form active">
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" required placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="btn-primary full-width">Sign In</button>
+            </form>
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" required placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="btn-primary full-width">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkoutModal" class="modal">
+        <div class="modal-content checkout-content">
+            <button class="close-modal" id="closeCheckout"><i class="fa-solid fa-xmark"></i></button>
+            <h3>Secure Checkout</h3>
+            <form id="checkoutForm">
+                <h4>Shipping Address</h4>
+                <div class="form-row">
+                    <div class="form-group"><input type="text" placeholder="First Name" required></div>
+                    <div class="form-group"><input type="text" placeholder="Last Name" required></div>
+                </div>
+                <div class="form-group"><input type="text" placeholder="Street Address" required></div>
+                <div class="form-row">
+                    <div class="form-group"><input type="text" placeholder="City" required></div>
+                    <div class="form-group"><input type="text" placeholder="Postal Code" required></div>
+                </div>
+                <h4>Payment Details</h4>
+                <div class="form-group"><input type="text" placeholder="Card Number (4242 •••• •••• ••••)" required></div>
+                <div class="form-row">
+                    <div class="form-group"><input type="text" placeholder="MM / YY" required></div>
+                    <div class="form-group"><input type="text" placeholder="CVV" required></div>
+                </div>
+                <button type="submit" class="btn-primary full-width">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Info Modals (About, Contact, Privacy, Terms) -->
+    <div id="infoModal" class="modal">
+        <div class="modal-content info-content">
+            <button class="close-modal" id="closeInfo"><i class="fa-solid fa-xmark"></i></button>
+            <div id="infoModalBody"></div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMsg">Item added to bag successfully!</span>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
